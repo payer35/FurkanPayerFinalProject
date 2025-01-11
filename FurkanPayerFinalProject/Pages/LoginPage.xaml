@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FurkanPayerFinalProject.Pages.LoginPage"
+             Title="Login">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="25" VerticalOptions="Center">
+            <!-- Email Entry -->
+            <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
+
+            <!-- Password Entry -->
+            <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
+
+            <!-- Login Button -->
+            <Button Text="Login" x:Name="LoginButton"/>
+
+            <!-- Redirect to Register -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Don't have an account yet?" />
+                <Button Text="Register" x:Name="RegisterButton" BackgroundColor="Transparent" TextColor="Blue" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
