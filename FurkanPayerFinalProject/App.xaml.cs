@@ -6,7 +6,7 @@ namespace FurkanPayerFinalProject
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new LoginPage()); // LoginPage başlangıç sayfası
+            MainPage = new AppShell(); // LoginPage başlangıç sayfası
         }
     }
 

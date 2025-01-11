@@ -12,5 +12,15 @@ namespace FurkanPayerFinalProject.Pages
         {
             InitializeComponent();
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterPage));
+        }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

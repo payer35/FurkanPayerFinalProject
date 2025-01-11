@@ -12,12 +12,15 @@
             <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
 
             <!-- Login Button -->
-            <Button Text="Login" x:Name="LoginButton"/>
+            <Button Text="Login" x:Name="LoginButton" Clicked="LoginButton_Clicked"/>
 
             <!-- Redirect to Register -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Don't have an account yet?" />
-                <Button Text="Register" x:Name="RegisterButton" BackgroundColor="Transparent" TextColor="Blue" />
+                <Label Text="Don't have an account yet?" TextColor="Blue" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
         </StackLayout>
     </ScrollView>
