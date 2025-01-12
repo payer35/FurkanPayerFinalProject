@@ -3,47 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FurkanPayerFinalProject.Pages.RegisterPage"
              Title="RegisterPage">
-        <ScrollView>
-            <StackLayout Padding="20" Spacing="15">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
 
-                <!-- Name -->
-                <Entry Placeholder="First Name" x:Name="FirstNameEntry"/>
-                <Entry Placeholder="Last Name" x:Name="LastNameEntry"/>
+            <!-- Name -->
+            <Entry Placeholder="First Name" x:Name="FirstNameEntry"/>
+            <Entry Placeholder="Last Name" x:Name="LastNameEntry"/>
 
-                <!-- Email -->
-                <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
+            <!-- Email -->
+            <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
 
-                <!-- Phone -->
-                <Entry Placeholder="Phone" Keyboard="Telephone" x:Name="PhoneEntry"/>
+            <!-- Password -->
+            <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
 
-                <!-- Gender Dropdown -->
-                <Label Text="Gender" FontSize="Medium" Margin="0,10,0,0"/>
-                <Frame BorderColor="Gray" Padding="10,5">
-                    <Label x:Name="SelectedGender" Text="Select Gender" TextColor="Gray" />
-                </Frame>
-                <CollectionView x:Name="GenderDropDown" IsVisible="False" SelectionMode="Single" BackgroundColor="White">
-                    <CollectionView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Male</x:String>
-                            <x:String>Female</x:String>
-                            <x:String>Other</x:String>
-                        </x:Array>
-                    </CollectionView.ItemsSource>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Padding="10">
-                                <Label Text="{Binding}" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+            <!-- Phone -->
+            <Entry Placeholder="Phone" Keyboard="Telephone" x:Name="PhoneEntry"/>
 
-                <!-- Date of Birth -->
-                <Label Text="Date of Birth" FontSize="Medium" Margin="0,10,0,0"/>
-                <DatePicker x:Name="DateOfBirthPicker"/>
+            <!-- Gender Dropdown -->
+            <Label Text="Gender" TextColor="White" FontSize="Medium" Margin="0,10,0,0"/>
+            <Frame BorderColor="Gray" Padding="10,5">
+                <Label x:Name="SelectedGender" Text="Select Gender" TextColor="White">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowGenderDropdownCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <CollectionView x:Name="GenderDropDown" IsVisible="False" SelectionMode="Single" BackgroundColor="White">
+                <CollectionView.ItemsSource> 
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                        <x:String>Other</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10" BackgroundColor="Gray">
+                            <Label Text="{Binding}" TextColor="White" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-                <!-- Register Button -->
-                <Button Text="Register" x:Name="RegisterButton" Clicked="RegisterButton_Clicked"/>
-            </StackLayout>
-        </ScrollView>
+
+            <Label Text="Date of Birth" FontSize="Medium" Margin="0,10,0,0"/>
+            <DatePicker x:Name="DateOfBirthPicker"/>
+
+
+            <Button Text="Register" x:Name="RegisterButton" Clicked="RegisterButton_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

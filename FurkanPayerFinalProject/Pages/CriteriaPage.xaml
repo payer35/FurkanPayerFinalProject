@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FurkanPayerFinalProject.Pages.CriteriaPage"
+             Title="Visa Selection">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Label Text="Your Country" FontSize="Medium" Margin="0,10,0,0" />
+            <Picker x:Name="FromCountryPicker" Title="Select Your Country"
+                    SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Turkey</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Destination Country" FontSize="Medium" Margin="0,10,0,0" />
+            <Picker x:Name="ToCountryPicker" Title="Select Destination"
+                    SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Dubai</x:String>
+                        <x:String>Germany</x:String>
+                        <x:String>America</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Visa Type" FontSize="Medium" Margin="0,10,0,0" />
+            <Picker x:Name="VisaTypePicker" Title="Select Visa Type"
+                    SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Tourist</x:String>
+                        <x:String>Student</x:String>
+                        <x:String>Business</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Duration" FontSize="Medium" Margin="0,10,0,0" />
+            <Picker x:Name="DurationPicker" Title="Select Duration"
+                    SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Short Term</x:String>
+                        <x:String>Long Term</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Applicant Type" FontSize="Medium" Margin="0,10,0,0" />
+            <Picker x:Name="ApplicantTypePicker" Title="Select Applicant Type"
+                    SelectedIndexChanged="OnPickerChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Employed</x:String>
+                        <x:String>Student</x:String>
+                        <x:String>Retired</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="View Documents"
+                    x:Name="ShowDocumentsButton"
+                    IsEnabled="False"
+                    Clicked="OnShowDocumentsClicked"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    Margin="0,20,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+

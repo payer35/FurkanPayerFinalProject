@@ -10,4 +10,6 @@
 
     <ShellContent Title="Login" ContentTemplate="{DataTemplate pages:LoginPage}" Route="LoginPage" />
     <ShellContent Title="Register" ContentTemplate="{DataTemplate pages:RegisterPage}" Route="RegisterPage" />
+    <ShellContent Title="Criteria" ContentTemplate="{DataTemplate pages:CriteriaPage}" Route="CriteriaPage" />
+    <ShellContent Title="Final Details" ContentTemplate="{DataTemplate pages:FinalDetailsPage}" Route="FinalDetailsPage" />
 </Shell>
