@@ -7,7 +7,6 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">
 
-            <!-- First Name -->
             <VerticalStackLayout>
                 <Label Text="First Name"
                        FontSize="16"
@@ -21,7 +20,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Last Name -->
             <VerticalStackLayout>
                 <Label Text="Last Name"
                        FontSize="16"
@@ -35,7 +33,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Email -->
             <VerticalStackLayout>
                 <Label Text="Email"
                        FontSize="16"
@@ -50,7 +47,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Password -->
             <VerticalStackLayout>
                 <Label Text="Password"
                        FontSize="16"
@@ -65,7 +61,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Phone -->
             <VerticalStackLayout>
                 <Label Text="Phone"
                        FontSize="16"
@@ -80,7 +75,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Gender Dropdown -->
             <VerticalStackLayout>
                 <Label Text="Gender"
                        FontSize="16"
@@ -121,7 +115,6 @@
                 </CollectionView>
             </VerticalStackLayout>
 
-            <!-- Date of Birth -->
             <VerticalStackLayout>
                 <Label Text="Date of Birth"
                        FontSize="16"
@@ -133,7 +126,6 @@
                             Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Register Button -->
             <Button Text="Register"
                     x:Name="RegisterButton"
                     Clicked="RegisterButton_Clicked"

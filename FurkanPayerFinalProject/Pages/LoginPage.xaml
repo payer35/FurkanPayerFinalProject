@@ -7,7 +7,6 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
 
-            <!-- Email Entry -->
             <VerticalStackLayout>
                 <Label Text="Email"
                        FontSize="16"
@@ -22,7 +21,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Password Entry -->
             <VerticalStackLayout>
                 <Label Text="Password"
                        FontSize="16"
@@ -37,7 +35,6 @@
                        Margin="0,5,0,0" />
             </VerticalStackLayout>
 
-            <!-- Login Button -->
             <Button Text="Login"
                     x:Name="LoginButton"
                     Clicked="LoginButton_Clicked"
@@ -46,7 +43,6 @@
                     CornerRadius="25"
                     HeightRequest="50" />
 
-            <!-- Register Link -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="Don't have an account yet?"
                        FontSize="14"

@@ -8,11 +8,9 @@ public partial class FinalDetailsPage : ContentPage
     {
         InitializeComponent();
 
-        // Verileri al
         var visaData = VisaDataProvider.GetVisaData();
         var visaDetails = GetVisaDetails(visaData, toCountry, visaType, duration, applicantType);
 
-        // Verileri UI'ya baðla
         FeeLabel.Text = visaDetails.Fee;
         ProcessingTimeLabel.Text = visaDetails.ProcessingTime;
         DocumentsCollectionView.ItemsSource = visaDetails.Documents;

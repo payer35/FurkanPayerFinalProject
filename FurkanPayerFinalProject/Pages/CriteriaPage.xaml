@@ -6,26 +6,20 @@
              BackgroundColor="#F8F7FA">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">
-            <!-- Spacing artırıldı -->
 
-            <!-- Başlık ve Açıklama -->
             <VerticalStackLayout Padding="20" Spacing="10" HorizontalOptions="Center">
-                <!-- Ana Başlık -->
                 <Label Text="Visa Selection Criterias"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#000000"
                        HorizontalOptions="Center" />
 
-                <!-- Alt Başlık -->
                 <Label Text="Select criterias relevant to your visa application"
                        FontSize="16"
                        TextColor="#666666"
                        HorizontalOptions="Center" />
 
-                <!-- Aşama Göstergesi -->
                 <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,20,0,0">
-                    <!-- Adım 1 -->
                     <Frame BackgroundColor="#7E3AF2"
                            CornerRadius="20"
                            HeightRequest="40"
@@ -39,12 +33,10 @@
                                FontSize="16"
                                FontAttributes="Bold" />
                     </Frame>
-                    <!-- Ok -->
                     <Label Text="→"
                            FontSize="18"
                            VerticalOptions="Center"
                            TextColor="#7E3AF2" />
-                    <!-- Adım 2 -->
                     <Frame BackgroundColor="#E5E7EB"
                            CornerRadius="20"
                            HeightRequest="40"
@@ -61,7 +53,6 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
-            <!-- Your Country Picker -->
             <VerticalStackLayout>
                 <Label Text="Your Country"
                        FontSize="16"
@@ -80,7 +71,6 @@
                 </Picker>
             </VerticalStackLayout>
 
-            <!-- Destination Country Picker -->
             <VerticalStackLayout>
                 <Label Text="Destination Country"
                        FontSize="16"
@@ -100,7 +90,6 @@
                 </Picker>
             </VerticalStackLayout>
 
-            <!-- Visa Type Picker -->
             <VerticalStackLayout>
                 <Label Text="Visa Type"
                        FontSize="16"
@@ -121,7 +110,6 @@
                 </Picker>
             </VerticalStackLayout>
 
-            <!-- Duration Picker -->
             <VerticalStackLayout>
                 <Label Text="Duration"
                        FontSize="16"
@@ -141,7 +129,6 @@
                 </Picker>
             </VerticalStackLayout>
 
-            <!-- Applicant Type Picker -->
             <VerticalStackLayout>
                 <Label Text="Applicant Type"
                        FontSize="16"
@@ -163,7 +150,6 @@
                 </Picker>
             </VerticalStackLayout>
 
-            <!-- Show Documents Button -->
             <Button x:Name="ShowDocumentsButton"
                     Text="View Documents"
                     IsEnabled="False"
