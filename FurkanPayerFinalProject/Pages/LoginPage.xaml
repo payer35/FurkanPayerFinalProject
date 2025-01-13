@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FurkanPayerFinalProject.Pages.LoginPage"
-             Title="Login"
-             BackgroundColor="#F8F7FA">
+             BackgroundColor="#F8F7FA"
+             NavigationPage.HasNavigationBar="False">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
+
+            <!-- Logo Section -->
+            <Image Source="logo.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   Aspect="AspectFit"
+                   Margin="0,0,0,20"/>
 
             <VerticalStackLayout>
                 <Label Text="Email"

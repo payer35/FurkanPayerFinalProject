@@ -8,8 +8,20 @@
     Shell.FlyoutBehavior="Disabled"
     Title="FurkanPayerFinalProject">
 
-    <ShellContent Title="Login" ContentTemplate="{DataTemplate pages:LoginPage}" Route="LoginPage" />
-    <ShellContent Title="Register" ContentTemplate="{DataTemplate pages:RegisterPage}" Route="RegisterPage" />
-    <ShellContent Title="Criteria" ContentTemplate="{DataTemplate pages:CriteriaPage}" Route="CriteriaPage" />
-    <ShellContent Title="Final Details" ContentTemplate="{DataTemplate pages:FinalDetailsPage}" Route="FinalDetailsPage" />
+    <ShellContent Title="Login"
+                  ContentTemplate="{DataTemplate pages:LoginPage}"
+                  Route="LoginPage"
+                  Shell.NavBarIsVisible="False" />
+    <ShellContent Title="Register"
+                  ContentTemplate="{DataTemplate pages:RegisterPage}"
+                  Route="RegisterPage"
+                  Shell.NavBarIsVisible="False" />
+    <ShellContent Title="Criteria"
+                  ContentTemplate="{DataTemplate pages:CriteriaPage}"
+                  Route="CriteriaPage"
+                  Shell.NavBarIsVisible="False" />
+    <ShellContent Title="Final Details"
+                  ContentTemplate="{DataTemplate pages:FinalDetailsPage}"
+                  Route="FinalDetailsPage"
+                  Shell.NavBarIsVisible="False" />
 </Shell>
