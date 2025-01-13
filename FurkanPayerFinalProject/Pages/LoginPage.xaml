@@ -7,7 +7,6 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
 
-            <!-- Logo Section -->
             <Image Source="logo.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Start"

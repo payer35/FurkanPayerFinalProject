@@ -7,7 +7,6 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="25">
-            <!-- Header Section -->
             <VerticalStackLayout Padding="20" Spacing="10" HorizontalOptions="Center">
                 <Label Text="Document Requirements" 
                        FontSize="24" 
@@ -19,7 +18,6 @@
                        TextColor="#666666"
                        HorizontalOptions="Center"/>
 
-                <!-- Progress Indicators -->
                 <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,20,0,0">
                     <Frame BackgroundColor="#E5E7EB"
                            CornerRadius="20"
@@ -54,7 +52,6 @@
                 </HorizontalStackLayout>
             </VerticalStackLayout>
 
-            <!-- Fee Details -->
             <VerticalStackLayout>
                 <Frame Padding="15" 
                        BackgroundColor="White"
@@ -73,7 +70,6 @@
                 </Frame>
             </VerticalStackLayout>
 
-            <!-- Processing Time Details -->
             <VerticalStackLayout>
                 <Frame Padding="15" 
                        BackgroundColor="White"
@@ -92,7 +88,6 @@
                 </Frame>
             </VerticalStackLayout>
 
-            <!-- Required Documents Section -->
             <VerticalStackLayout>
                 <Frame Padding="15" 
                        BackgroundColor="White"
@@ -133,7 +128,6 @@
                 </Frame>
             </VerticalStackLayout>
 
-            <!-- Back Button -->
             <Button Text="Back to Criteria"
                     Clicked="OnBackButtonClicked"
                     BackgroundColor="#7E3AF2"
