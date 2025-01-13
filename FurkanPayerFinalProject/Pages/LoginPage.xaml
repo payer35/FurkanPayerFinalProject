@@ -5,16 +5,12 @@
              Title="Login">
     <ScrollView>
         <StackLayout Padding="20" Spacing="25" VerticalOptions="Center">
-            <!-- Email Entry -->
             <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
 
-            <!-- Password Entry -->
             <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
 
-            <!-- Login Button -->
             <Button Text="Login" x:Name="LoginButton" Clicked="LoginButton_Clicked"/>
 
-            <!-- Redirect to Register -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label Text="Don't have an account yet?" TextColor="Blue" FontAttributes="Bold">
                     <Label.GestureRecognizers>

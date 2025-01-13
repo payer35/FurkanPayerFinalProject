@@ -21,9 +21,8 @@
                     SelectedIndexChanged="OnPickerChanged">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>Dubai</x:String>
                         <x:String>Germany</x:String>
-                        <x:String>America</x:String>
+                        <x:String>United States of America</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>
@@ -57,6 +56,7 @@
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Employed</x:String>
+                        <x:String>Self-Employed</x:String>
                         <x:String>Student</x:String>
                         <x:String>Retired</x:String>
                     </x:Array>
@@ -73,4 +73,5 @@
         </StackLayout>
     </ScrollView>
 </ContentPage>
+
 

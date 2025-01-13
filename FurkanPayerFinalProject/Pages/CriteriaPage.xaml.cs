@@ -25,7 +25,6 @@ public partial class CriteriaPage : ContentPage
         var selectedDuration = DurationPicker.SelectedItem?.ToString();
         var selectedApplicantType = ApplicantTypePicker.SelectedItem?.ToString();
 
-
-        
+        await Navigation.PushAsync(new FinalDetailsPage(selectedFromCountry, selectedToCountry, selectedVisaType, selectedDuration, selectedApplicantType));
     }
 }

@@ -6,7 +6,15 @@ namespace FurkanPayerFinalProject
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell(); // LoginPage başlangıç sayfası
+
+            InitializeApp();
+
+            MainPage = new AppShell();
+        }
+
+        private async void InitializeApp()
+        {
+            await FurkanPayerFinalProject.Services.DatabaseService.InitializeDatabase();
         }
     }
 

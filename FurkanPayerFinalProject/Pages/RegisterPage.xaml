@@ -6,20 +6,15 @@
     <ScrollView>
         <StackLayout Padding="20" Spacing="15">
 
-            <!-- Name -->
             <Entry Placeholder="First Name" x:Name="FirstNameEntry"/>
             <Entry Placeholder="Last Name" x:Name="LastNameEntry"/>
 
-            <!-- Email -->
             <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
 
-            <!-- Password -->
             <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
 
-            <!-- Phone -->
             <Entry Placeholder="Phone" Keyboard="Telephone" x:Name="PhoneEntry"/>
 
-            <!-- Gender Dropdown -->
             <Label Text="Gender" TextColor="White" FontSize="Medium" Margin="0,10,0,0"/>
             <Frame BorderColor="Gray" Padding="10,5">
                 <Label x:Name="SelectedGender" Text="Select Gender" TextColor="White">
