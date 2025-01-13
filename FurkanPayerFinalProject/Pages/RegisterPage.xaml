@@ -2,50 +2,147 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FurkanPayerFinalProject.Pages.RegisterPage"
-             Title="RegisterPage">
+             Title="Register"
+             BackgroundColor="#F8F7FA">
     <ScrollView>
-        <StackLayout Padding="20" Spacing="15">
+        <VerticalStackLayout Padding="20" Spacing="25">
 
-            <Entry Placeholder="First Name" x:Name="FirstNameEntry"/>
-            <Entry Placeholder="Last Name" x:Name="LastNameEntry"/>
+            <!-- First Name -->
+            <VerticalStackLayout>
+                <Label Text="First Name"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your first name"
+                       x:Name="FirstNameEntry"
+                       BackgroundColor="White"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       FontSize="14"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-            <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
+            <!-- Last Name -->
+            <VerticalStackLayout>
+                <Label Text="Last Name"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your last name"
+                       x:Name="LastNameEntry"
+                       BackgroundColor="White"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       FontSize="14"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-            <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
+            <!-- Email -->
+            <VerticalStackLayout>
+                <Label Text="Email"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your email"
+                       x:Name="EmailEntry"
+                       Keyboard="Email"
+                       BackgroundColor="White"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       FontSize="14"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-            <Entry Placeholder="Phone" Keyboard="Telephone" x:Name="PhoneEntry"/>
+            <!-- Password -->
+            <VerticalStackLayout>
+                <Label Text="Password"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your password"
+                       x:Name="PasswordEntry"
+                       IsPassword="True"
+                       BackgroundColor="White"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       FontSize="14"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-            <Label Text="Gender" TextColor="White" FontSize="Medium" Margin="0,10,0,0"/>
-            <Frame BorderColor="Gray" Padding="10,5">
-                <Label x:Name="SelectedGender" Text="Select Gender" TextColor="White">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding ShowGenderDropdownCommand}" />
-                    </Label.GestureRecognizers>
-                </Label>
-            </Frame>
-            <CollectionView x:Name="GenderDropDown" IsVisible="False" SelectionMode="Single" BackgroundColor="White">
-                <CollectionView.ItemsSource> 
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Male</x:String>
-                        <x:String>Female</x:String>
-                        <x:String>Other</x:String>
-                    </x:Array>
-                </CollectionView.ItemsSource>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout Padding="10" BackgroundColor="Gray">
-                            <Label Text="{Binding}" TextColor="White" />
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+            <!-- Phone -->
+            <VerticalStackLayout>
+                <Label Text="Phone"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your phone number"
+                       x:Name="PhoneEntry"
+                       Keyboard="Telephone"
+                       BackgroundColor="White"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       FontSize="14"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
+            <!-- Gender Dropdown -->
+            <VerticalStackLayout>
+                <Label Text="Gender"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Frame BackgroundColor="White"
+                       CornerRadius="10"
+                       BorderColor="#E5E7EB"
+                       Padding="10,5"
+                       HeightRequest="50">
+                    <Label x:Name="SelectedGender"
+                           Text="Select Gender"
+                           TextColor="#666666"
+                           VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGenderDropdownCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Frame>
+                <CollectionView x:Name="GenderDropDown"
+                                IsVisible="False"
+                                SelectionMode="Single"
+                                BackgroundColor="White"
+                                Margin="0,5,0,0">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                            <x:String>Other</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding}" TextColor="#000000" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
 
-            <Label Text="Date of Birth" FontSize="Medium" Margin="0,10,0,0"/>
-            <DatePicker x:Name="DateOfBirthPicker"/>
+            <!-- Date of Birth -->
+            <VerticalStackLayout>
+                <Label Text="Date of Birth"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <DatePicker x:Name="DateOfBirthPicker"
+                            BackgroundColor="White"
+                            TextColor="#000000"
+                            FontSize="14"
+                            Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-
-            <Button Text="Register" x:Name="RegisterButton" Clicked="RegisterButton_Clicked"/>
-        </StackLayout>
+            <!-- Register Button -->
+            <Button Text="Register"
+                    x:Name="RegisterButton"
+                    Clicked="RegisterButton_Clicked"
+                    BackgroundColor="#7E3AF2"
+                    TextColor="White"
+                    CornerRadius="25"
+                    HeightRequest="50"
+                    FontSize="16"
+                    FontAttributes="Bold" />
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

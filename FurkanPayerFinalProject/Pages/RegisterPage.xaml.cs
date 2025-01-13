@@ -24,7 +24,7 @@ public partial class RegisterPage : ContentPage
             if (e.CurrentSelection.Count > 0)
             {
                 SelectedGender.Text = e.CurrentSelection[0].ToString();
-                SelectedGender.TextColor = Colors.White;
+                SelectedGender.TextColor = Colors.Black;
                 GenderDropDown.IsVisible = false;
             }
         };

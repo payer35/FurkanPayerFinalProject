@@ -11,14 +11,14 @@
             <!-- Başlık ve Açıklama -->
             <VerticalStackLayout Padding="20" Spacing="10" HorizontalOptions="Center">
                 <!-- Ana Başlık -->
-                <Label Text="Vize Belge Kontrolü"
+                <Label Text="Visa Selection Criterias"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#000000"
                        HorizontalOptions="Center" />
 
                 <!-- Alt Başlık -->
-                <Label Text="Vize başvurunuz için gerekli belgeleri öğrenin"
+                <Label Text="Select criterias relevant to your visa application"
                        FontSize="16"
                        TextColor="#666666"
                        HorizontalOptions="Center" />

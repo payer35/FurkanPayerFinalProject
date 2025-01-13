@@ -2,22 +2,61 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FurkanPayerFinalProject.Pages.LoginPage"
-             Title="Login">
+             Title="Login"
+             BackgroundColor="#F8F7FA">
     <ScrollView>
-        <StackLayout Padding="20" Spacing="25" VerticalOptions="Center">
-            <Entry Placeholder="Email" Keyboard="Email" x:Name="EmailEntry"/>
+        <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="Center">
 
-            <Entry Placeholder="Password" IsPassword="True" x:Name="PasswordEntry"/>
+            <!-- Email Entry -->
+            <VerticalStackLayout>
+                <Label Text="Email"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your email"
+                       x:Name="EmailEntry"
+                       Keyboard="Email"
+                       BackgroundColor="White"
+                       FontSize="16"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
-            <Button Text="Login" x:Name="LoginButton" Clicked="LoginButton_Clicked"/>
+            <!-- Password Entry -->
+            <VerticalStackLayout>
+                <Label Text="Password"
+                       FontSize="16"
+                       TextColor="#666666" />
+                <Entry Placeholder="Enter your password"
+                       x:Name="PasswordEntry"
+                       IsPassword="True"
+                       BackgroundColor="White"
+                       FontSize="16"
+                       TextColor="#000000"
+                       HeightRequest="50"
+                       Margin="0,5,0,0" />
+            </VerticalStackLayout>
 
+            <!-- Login Button -->
+            <Button Text="Login"
+                    x:Name="LoginButton"
+                    Clicked="LoginButton_Clicked"
+                    BackgroundColor="#7E3AF2"
+                    TextColor="White"
+                    CornerRadius="25"
+                    HeightRequest="50" />
+
+            <!-- Register Link -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Don't have an account yet?" TextColor="Blue" FontAttributes="Bold">
+                <Label Text="Don't have an account yet?"
+                       FontSize="14"
+                       TextColor="#7E3AF2"
+                       FontAttributes="Bold">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
                     </Label.GestureRecognizers>
                 </Label>
             </StackLayout>
-        </StackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
